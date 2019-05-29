@@ -1,0 +1,70 @@
+webpackHotUpdate("static\\development\\pages\\index.js",{
+
+/***/ "./components/ResponseMessage.js":
+/*!***************************************!*\
+  !*** ./components/ResponseMessage.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "C:\\Users\\succi\\Documents\\PROJECTS\\REACT\\reservation\\reservations-hotel\\components\\ResponseMessage.js";
+
+
+
+var Header = function Header(props) {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "jsx-390591066",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 2
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("pre", {
+    className: "jsx-390591066",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(props.message)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("pre", {
+    className: "jsx-390591066",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(props.message.data.name)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("pre", {
+    className: "jsx-390591066",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(props.message._id)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("pre", {
+    className: "jsx-390591066",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(props.message.hotel)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    id: "390591066",
+    __self: this
+  }, "pre.jsx-390591066{font-family:\"Arial\";padding:20;color:#39f;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcc3VjY2lcXERvY3VtZW50c1xcUFJPSkVDVFNcXFJFQUNUXFxyZXNlcnZhdGlvblxccmVzZXJ2YXRpb25zLWhvdGVsXFxjb21wb25lbnRzXFxSZXNwb25zZU1lc3NhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2tCLEFBRytCLG9CQUNULFdBQ0EsV0FDYiIsImZpbGUiOiJDOlxcVXNlcnNcXHN1Y2NpXFxEb2N1bWVudHNcXFBST0pFQ1RTXFxSRUFDVFxccmVzZXJ2YXRpb25cXHJlc2VydmF0aW9ucy1ob3RlbFxcY29tcG9uZW50c1xcUmVzcG9uc2VNZXNzYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgSGVhZGVyID0gKHByb3BzKSA9PiAoXHJcbiAgICA8ZGl2PlxyXG4gICAgICA8cHJlPntKU09OLnN0cmluZ2lmeShwcm9wcy5tZXNzYWdlKX08L3ByZT5cclxuICAgICAgPHByZT57SlNPTi5zdHJpbmdpZnkocHJvcHMubWVzc2FnZS5kYXRhLm5hbWUpfTwvcHJlPlxyXG4gICAgICA8cHJlPntKU09OLnN0cmluZ2lmeShwcm9wcy5tZXNzYWdlLl9pZCl9PC9wcmU+XHJcbiAgICAgIDxwcmU+e0pTT04uc3RyaW5naWZ5KHByb3BzLm1lc3NhZ2UuaG90ZWwpfTwvcHJlPlxyXG4gICAgICB7LyogPHByZT57SlNPTi5zdHJpbmdpZnkocHJvcHMubWVzc2FnZSl9PC9wcmU+ICovfVxyXG4gICAgICB7LyogPHByZT57SlNPTi5zdHJpbmdpZnkocHJvcHMubWVzc2FnZSl9PC9wcmU+ICovfVxyXG4gICAgICB7LyogPHByZT57SlNPTi5zdHJpbmdpZnkocHJvcHMubWVzc2FnZSl9PC9wcmU+ICovfVxyXG4gICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgcHJlIHtcclxuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIkFyaWFsXCI7XHJcbiAgICAgICAgICBwYWRkaW5nOiAyMDtcclxuICAgICAgICAgIGNvbG9yOiAjMzlmO1xyXG4gICAgICAgIH1cclxuICAgICAgYH08L3N0eWxlPlxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxuICBcclxuICBleHBvcnQgZGVmYXVsdCBIZWFkZXI7Il19 */\n/*@ sourceURL=C:\\Users\\succi\\Documents\\PROJECTS\\REACT\\reservation\\reservations-hotel\\components\\ResponseMessage.js */"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ })
+
+})
+//# sourceMappingURL=index.js.55567ad9d3a07f406f41.hot-update.js.map
