@@ -1,6 +1,6 @@
 import MobileForm from "../components/MobileForm";
 import ResponseMessage from "../components/ResponseMessage";
-import Accordion from "../components/Accordion";
+// import Accordion from "../components/Accordion";
 import PageTitle from "../components/PageTitle";
 import WideForm from "../components/WideForm";
 import Layout from "../components/layout";
@@ -33,15 +33,6 @@ class Index extends React.Component {
     window.removeEventListener("resize", this.resizeHandler);
   }
 
-  groupFn = o => {
-    this.setState({ controler: { identifier: o.myID, group: o.groupID } });
-  };
-
-  callbackFn = bool => {
-    // Do some side effect
-    // console.log("callbackFn(" + bool + ")");
-  };
-
   resizeHandler() {
     // const debounce = (func, delay) => {
     //   let inDebounce;
@@ -54,7 +45,7 @@ class Index extends React.Component {
     // };
     const resizeLayout = () => {
       if (this.state.isMobile !== window.innerWidth < this.breakpoint) {
-        console.log("this.state.isMobile", this.state.isMobile);
+        // console.log("this.state.isMobile", this.state.isMobile);
         this.setState({
           isMobile: window.innerWidth < this.breakpoint
         });
