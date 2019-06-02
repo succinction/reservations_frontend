@@ -1,9 +1,10 @@
 import ReservationForm from "../components/ReservationForm";
 import ResponseMessage from "../components/ResponseMessage";
 import PageTitle from "../components/PageTitle";
-import WideForm from "../components/WideForm";
+// import WideForm from "../components/WideForm";
 import Layout from "../components/layout";
 import React from "react";
+import Accordion from "../components/Accordion";
 
 class Portal extends React.Component {
   constructor(props) {
@@ -38,28 +39,18 @@ class Portal extends React.Component {
 
   callbackFn = bool => {
     // Do some side effect
-    // console.log("callbackFn(" + bool + ")");
+    console.log("accordion call back");
   };
 
   resizeHandler() {
-    // const debounce = (func, delay) => {
-    //   let inDebounce;
-    //   return (function() {
-    //     const context = this;
-    //     const args = arguments;
-    //     clearTimeout(inDebounce);
-    //     inDebounce = setTimeout(() => func.apply(context, args), delay);
-    //   })();
-    // };
     const resizeLayout = () => {
       if (this.state.isMobile !== window.innerWidth < this.breakpoint) {
-        console.log("this.state.isMobile", this.state.isMobile);
+        // console.log("this.state.isMobile", this.state.isMobile);
         this.setState({
           isMobile: window.innerWidth < this.breakpoint
         });
       }
     };
-    // debounce(resizeLayout, 200);
     resizeLayout();
   }
 
@@ -67,16 +58,45 @@ class Portal extends React.Component {
     this.setState({
       responseData: message
     });
+    document.getElementById("accordionAction").click();
   }
 
   render() {
+    let msg = this.state.responseData;
+    console.log("msg", msg);
+
+    // const accordionContent = (msg) => (
+    //   <>
+    //     <ResponseMessage message={msg} />
+    //     this is the message area
+    //     {/* {console.log("props", props)} */}
+    //     {console.log("this.props", this.props)}
+    //   </>
+    // );
+
     return (
       <Layout isMobile={this.state.isMobile} backgroundImage={this.bgImage}>
-        <ResponseMessage message={this.state.responseData} />
+        <a id="accordionAction">Message</a>
+        <Accordion
+          initOpen={false}
+          ID="responseWindow"
+          actionID="accordionAction"
+          groupID="AAA"
+          groupFn={this.groupFn}
+          controler={this.state.controler}
+          callbackFn={this.callbackFn}
+        >
+          {/* <ResponseMessage message={msg} /> */}
+          {/* this is the message area */}
+          {/* {console.log("props", props)} */}
+          {/* {console.log("this.props", this.props)} */}
+        </Accordion>
+        <ResponseMessage message={msg} />
+        <p>{JSON.stringify(msg)}</p>
         <PageTitle isMobile={this.state.isMobile}>
           Find Your Reservations
         </PageTitle>
-         <ReservationForm callbackFn={this.responseFn} />
+        <ReservationForm callbackFn={this.responseFn} />
       </Layout>
     );
   }

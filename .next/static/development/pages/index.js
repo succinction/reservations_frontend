@@ -400,85 +400,78 @@ var PageTitle = function PageTitle(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\Users\\succi\\Documents\\PROJECTS\\REACT\\reservation\\reservations-hotel\\components\\ResponseMessage.js";
 
 
 
 var ResponseMessage = function ResponseMessage(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "jsx-3843682568",
+  {
+    console.log(props);
+  }
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-3866613286",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 4
     },
     __self: this
-  }, props.message !== "" && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "jsx-3843682568",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
-    className: "jsx-3843682568",
+  }, props.message !== "" && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-3866613286",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, props.message.title), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    className: "jsx-3843682568",
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    className: "jsx-3866613286",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, "ID: ", props.message._id), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    className: "jsx-3843682568",
+  }, props.message.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "jsx-3866613286",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, "Name: ", props.message.name), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    className: "jsx-3843682568",
+  }, "ID: ", props.message._id), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "jsx-3866613286",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, "Hotel: ", props.message.hotel), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    className: "jsx-3843682568",
+  }, "Name: ", props.message.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "jsx-3866613286",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, "Arrival Date: ", props.message.arrivalDate), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    className: "jsx-3843682568",
+  }, "Hotel: ", props.message.hotel), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "jsx-3866613286",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, "Departure Date: ", props.message.departureDate), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("pre", {
-    className: "jsx-3843682568",
+  }, "Arrival Date: ", props.message.arrivalDate), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    className: "jsx-3866613286",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(props.message))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    id: "3843682568",
+  }, "Departure Date: ", props.message.departureDate)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3866613286",
     __self: this
-  }, "pre.jsx-3843682568,h1.jsx-3843682568{font-family:\"Arial\";padding:20;color:#fff;}div.jsx-3843682568{background:#19f;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcc3VjY2lcXERvY3VtZW50c1xcUFJPSkVDVFNcXFJFQUNUXFxyZXNlcnZhdGlvblxccmVzZXJ2YXRpb25zLWhvdGVsXFxjb21wb25lbnRzXFxSZXNwb25zZU1lc3NhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY2dCLEFBSTZCLEFBS0YsZ0JBQ3BCLElBTGEsV0FDQSxXQUNiIiwiZmlsZSI6IkM6XFxVc2Vyc1xcc3VjY2lcXERvY3VtZW50c1xcUFJPSkVDVFNcXFJFQUNUXFxyZXNlcnZhdGlvblxccmVzZXJ2YXRpb25zLWhvdGVsXFxjb21wb25lbnRzXFxSZXNwb25zZU1lc3NhZ2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBSZXNwb25zZU1lc3NhZ2UgPSBwcm9wcyA9PiAoXHJcbiAgPGRpdj5cclxuICAgIHsvKiB7cHJvcHMubWVzc2FnZSAhPT0gXCJcIiAmJiA8aDE+WW91ciBib29raW5nIGhhcyBzdWNjZWVkZWQ8L2gxPn0gKi99XHJcbiAgICB7cHJvcHMubWVzc2FnZSAhPT0gXCJcIiAmJiAoXHJcbiAgICAgIDxkaXY+XHJcbiAgICAgICAgPGgxPntwcm9wcy5tZXNzYWdlLnRpdGxlfTwvaDE+XHJcbiAgICAgICAgPHA+SUQ6IHtwcm9wcy5tZXNzYWdlLl9pZH08L3A+XHJcbiAgICAgICAgPHA+TmFtZToge3Byb3BzLm1lc3NhZ2UubmFtZX08L3A+XHJcbiAgICAgICAgPHA+SG90ZWw6IHtwcm9wcy5tZXNzYWdlLmhvdGVsfTwvcD5cclxuICAgICAgICA8cD5BcnJpdmFsIERhdGU6IHtwcm9wcy5tZXNzYWdlLmFycml2YWxEYXRlfTwvcD5cclxuICAgICAgICA8cD5EZXBhcnR1cmUgRGF0ZToge3Byb3BzLm1lc3NhZ2UuZGVwYXJ0dXJlRGF0ZX08L3A+XHJcbiAgICAgICAgPHByZT57SlNPTi5zdHJpbmdpZnkocHJvcHMubWVzc2FnZSl9PC9wcmU+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgKX1cclxuICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgcHJlLFxyXG4gICAgICBoMSB7XHJcbiAgICAgICAgZm9udC1mYW1pbHk6IFwiQXJpYWxcIjtcclxuICAgICAgICBwYWRkaW5nOiAyMDtcclxuICAgICAgICBjb2xvcjogI2ZmZjtcclxuICAgICAgfVxyXG4gICAgICBkaXYge1xyXG4gICAgICAgICAgYmFja2dyb3VuZDogIzE5ZjtcclxuICAgICAgfVxyXG4gICAgYH08L3N0eWxlPlxyXG4gIDwvZGl2PlxyXG4pO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgUmVzcG9uc2VNZXNzYWdlO1xyXG4iXX0= */\n/*@ sourceURL=C:\\Users\\succi\\Documents\\PROJECTS\\REACT\\reservation\\reservations-hotel\\components\\ResponseMessage.js */"));
+  }, "pre.jsx-3866613286,h1.jsx-3866613286{font-family:\"Arial\";padding:20;color:#fff;}div.jsx-3866613286{background:#19f;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcc3VjY2lcXERvY3VtZW50c1xcUFJPSkVDVFNcXFJFQUNUXFxyZXNlcnZhdGlvblxccmVzZXJ2YXRpb25zLWhvdGVsXFxjb21wb25lbnRzXFxSZXNwb25zZU1lc3NhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZWtCLEFBSStCLEFBS0osZ0JBQ2xCLElBTGEsV0FDQSxXQUNiIiwiZmlsZSI6IkM6XFxVc2Vyc1xcc3VjY2lcXERvY3VtZW50c1xcUFJPSkVDVFNcXFJFQUNUXFxyZXNlcnZhdGlvblxccmVzZXJ2YXRpb25zLWhvdGVsXFxjb21wb25lbnRzXFxSZXNwb25zZU1lc3NhZ2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBSZXNwb25zZU1lc3NhZ2UgPSBwcm9wcyA9PiB7XHJcbiAge2NvbnNvbGUubG9nKHByb3BzKX1cclxuICByZXR1cm4gKFxyXG4gICAgPGRpdj5cclxuICAgICAge3Byb3BzLm1lc3NhZ2UgIT09IFwiXCIgJiYgKFxyXG4gICAgICAgIDxkaXY+XHJcbiAgICAgICAgICA8aDE+e3Byb3BzLm1lc3NhZ2UudGl0bGV9PC9oMT5cclxuICAgICAgICAgIDxwPklEOiB7cHJvcHMubWVzc2FnZS5faWR9PC9wPlxyXG4gICAgICAgICAgPHA+TmFtZToge3Byb3BzLm1lc3NhZ2UubmFtZX08L3A+XHJcbiAgICAgICAgICA8cD5Ib3RlbDoge3Byb3BzLm1lc3NhZ2UuaG90ZWx9PC9wPlxyXG4gICAgICAgICAgPHA+QXJyaXZhbCBEYXRlOiB7cHJvcHMubWVzc2FnZS5hcnJpdmFsRGF0ZX08L3A+XHJcbiAgICAgICAgICA8cD5EZXBhcnR1cmUgRGF0ZToge3Byb3BzLm1lc3NhZ2UuZGVwYXJ0dXJlRGF0ZX08L3A+XHJcbiAgICAgICAgICB7LyogPHByZT57SlNPTi5zdHJpbmdpZnkocHJvcHMubWVzc2FnZSl9PC9wcmU+ICovfVxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICApfVxyXG4gICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgcHJlLFxyXG4gICAgICAgIGgxIHtcclxuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIkFyaWFsXCI7XHJcbiAgICAgICAgICBwYWRkaW5nOiAyMDtcclxuICAgICAgICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgICAgIH1cclxuICAgICAgICBkaXYge1xyXG4gICAgICAgICAgYmFja2dyb3VuZDogIzE5ZjtcclxuICAgICAgICB9XHJcbiAgICAgIGB9PC9zdHlsZT5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBSZXNwb25zZU1lc3NhZ2U7XHJcbiJdfQ== */\n/*@ sourceURL=C:\\Users\\succi\\Documents\\PROJECTS\\REACT\\reservation\\reservations-hotel\\components\\ResponseMessage.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ResponseMessage);
@@ -11805,24 +11798,13 @@ function (_React$Component) {
     value: function resizeHandler() {
       var _this2 = this;
 
-      // const debounce = (func, delay) => {
-      //   let inDebounce;
-      //   return (function() {
-      //     const context = this;
-      //     const args = arguments;
-      //     clearTimeout(inDebounce);
-      //     inDebounce = setTimeout(() => func.apply(context, args), delay);
-      //   })();
-      // };
       var resizeLayout = function resizeLayout() {
         if (_this2.state.isMobile !== window.innerWidth < _this2.breakpoint) {
-          // console.log("this.state.isMobile", this.state.isMobile);
           _this2.setState({
             isMobile: window.innerWidth < _this2.breakpoint
           });
         }
-      }; // debounce(resizeLayout, 200);
-
+      };
 
       resizeLayout();
     }
@@ -11842,35 +11824,35 @@ function (_React$Component) {
         backgroundImage: this.bgImage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_components_ResponseMessage__WEBPACK_IMPORTED_MODULE_7__["default"], {
         message: this.state.responseData,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_components_PageTitle__WEBPACK_IMPORTED_MODULE_8__["default"], {
         isMobile: this.state.isMobile,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 58
         },
         __self: this
       }, "Make Your Reservations"), show && react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_components_MobileForm__WEBPACK_IMPORTED_MODULE_6__["default"], {
         callbackFn: this.responseFn,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 61
         },
         __self: this
       }), show || react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_components_WideForm__WEBPACK_IMPORTED_MODULE_9__["default"], {
         callbackFn: this.responseFn,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 62
         },
         __self: this
       }));

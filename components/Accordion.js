@@ -21,7 +21,7 @@ class Accordion extends Component {
     this.offsetTiming = !!this.props.offsetSeconds
       ? Number(this.props.offsetSeconds)
       : 0;
-      this.initOpen = !!this.props.initOpen ? this.props.initOpen : true
+      this.initOpen = !!this.props.initOpen ? this.props.initOpen : false
   }
 
   componentDidMount() {

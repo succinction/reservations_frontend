@@ -34,24 +34,13 @@ class Index extends React.Component {
   }
 
   resizeHandler() {
-    // const debounce = (func, delay) => {
-    //   let inDebounce;
-    //   return (function() {
-    //     const context = this;
-    //     const args = arguments;
-    //     clearTimeout(inDebounce);
-    //     inDebounce = setTimeout(() => func.apply(context, args), delay);
-    //   })();
-    // };
     const resizeLayout = () => {
       if (this.state.isMobile !== window.innerWidth < this.breakpoint) {
-        // console.log("this.state.isMobile", this.state.isMobile);
         this.setState({
           isMobile: window.innerWidth < this.breakpoint
         });
       }
     };
-    // debounce(resizeLayout, 200);
     resizeLayout();
   }
 

@@ -12,7 +12,6 @@ class ReservationForm extends React.Component {
     if (__ID.trim().length === 0) {
       return;
     }
-    // console.log( "__ID", __ID);
     const requestBody = {
       query: `
       query {
@@ -64,7 +63,7 @@ class ReservationForm extends React.Component {
         <form className="form-style-7" onSubmit={this.submitHandler}>
           <ul>
             <li>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Reservation ID</label>
               <input
                 ref={this.IDElem}
                 type="text"
