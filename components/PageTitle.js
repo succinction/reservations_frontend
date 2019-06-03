@@ -1,30 +1,18 @@
+import styled from 'styled-components'
+
 const PageTitle = props => (
   <div>
-    <h2>{props.children}</h2>
-    <style jsx>{`
-      h2 {
+    {/* <H2 props={props} >{props.children}</H2> */}
+    <H2  >{props.children}</H2>
+  </div>
+);
+
+export default PageTitle;
+
+const H2 = styled.h2`
         font-family: "Arial";
         text-align: center;
         background: #39c;
         width: 100%;
         margin-top: 6px;
-
-      }
-
-      div {
-        padding: 20;
-      }
-
-      a {
-        text-decoration: none;
-        color: blue;
-      }
-
-      a:hover {
-        opacity: 0.6;
-      }
-    `}</style>
-  </div>
-);
-
-export default PageTitle;
+`

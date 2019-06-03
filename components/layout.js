@@ -1,32 +1,45 @@
 import Header from "./header";
+import Head from "./Head";
 
-const Layout = props => (
-  <main>
-    <Header isMobile={props.isMobile} />
-    {props.children}
-    <style jsx>{`
-      h1,
-      p {
-        font-family: "Arial";
-      }
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMobile: true,
+    };
+    this.resizeHandler = this.resizeHandler.bind(this);
+    this.breakpoint = 600;
+  }
 
-      main {
-        padding: 20;
-        background-image: url("${
-          props.backgroundImage[props.isMobile ? 1 : 2]
-        }");
-      }
+  componentDidMount() {
+    window.addEventListener("resize", this.resizeHandler);
+    this.resizeHandler();
+  }
 
-      a {
-        text-decoration: none;
-        color: blue;
-      }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.resizeHandler);
+  }
 
-      a:hover {
-        opacity: 0.6;
+  resizeHandler() {
+    const resizeLayout = () => {
+      if (this.state.isMobile !== window.innerWidth < this.breakpoint) {
+        this.setState({
+          isMobile: window.innerWidth < this.breakpoint
+        });
       }
-    `}</style>
-  </main>
-);
+    };
+    resizeLayout();
+  }
+
+  render() {
+    return (
+      <main>
+        <Head isMobile={this.state.isMobile} />
+        <Header isMobile={this.state.isMobile} />
+        {this.props.render(this.state)  }
+      </main>
+    );
+  }
+}
 
 export default Layout;
