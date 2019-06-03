@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const PageTitle = props => (
   <div>
-    {/* <H2 props={props} >{props.children}</H2> */}
     <H2  >{props.children}</H2>
   </div>
 );
