@@ -1,12 +1,15 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const Header = props => (
   <div>
     <h1>Post Reservations Hotel</h1>
     <span>
-      <Link href="/" ><button> Home</button></Link>
-      {' '}
-      <Link href="/portal" ><button>Portal</button></Link>
+      <Link href="/">
+        <button>Home</button>
+      </Link>{" "}
+      <Link href="/portal">
+        <button>Portal</button>
+      </Link>
     </span>
     <style jsx>{`
       h1 {
