@@ -26,7 +26,7 @@ class Index extends React.Component {
         render={props => (
           <div>
             <ResponseMessage message={this.state.responseData} />
-            <PageTitle isMobile={props.isMobile}>
+            <PageTitle>
               Make Your Reservations
             </PageTitle>
             {props.isMobile && <MobileForm callbackFn={this.responseFn} />}

@@ -5,7 +5,7 @@ class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMobile: true,
+      isMobile: true
     };
     this.resizeHandler = this.resizeHandler.bind(this);
     this.breakpoint = 600;
@@ -36,7 +36,7 @@ class Layout extends React.Component {
       <main>
         <Head isMobile={this.state.isMobile} />
         <Header isMobile={this.state.isMobile} />
-        {this.props.render(this.state)  }
+        {this.props.render(this.state)}
       </main>
     );
   }

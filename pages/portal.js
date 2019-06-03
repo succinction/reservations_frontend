@@ -26,7 +26,7 @@ class Portal extends React.Component {
         render={props => (
           <div>
             <ResponseMessage message={this.state.responseData} />
-            <PageTitle isMobile={props.isMobile}>
+            <PageTitle>
               Find Your Reservations
             </PageTitle>
             <ReservationForm callbackFn={this.responseFn} />
