@@ -5,16 +5,35 @@ import WideForm from "../components/WideForm";
 import Layout from "../components/layout";
 import React from "react";
 
-class Index extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      responseData: ""
-    };
-    this.responseFn = this.responseFn.bind(this);
-  }
+interface IState {
+  responseData: {
+    title: String,
+    name: String,
+    hotel: String,
+    arrivalDate: String,
+    departureDate: String,
+    _id: String
+  } ;
+}
 
-  responseFn(message) {
+interface IProps {
+}
+
+
+class Index extends React.Component<IProps, IState>  {
+  state: IState = {
+    responseData: {
+      title: "String",
+      name: "String",
+      hotel: "String",
+      arrivalDate: "String",
+      departureDate: "String",
+      _id: "String"
+    }
+  };
+
+
+  responseFn =(message: { title: String; name: String; hotel: String; arrivalDate: String; departureDate: String; _id: String; }) => {
     this.setState({
       responseData: message
     });
@@ -23,7 +42,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout
-        render={props => (
+        render={(props: { isMobile: boolean; })  => (
           <div>
             <ResponseMessage message={this.state.responseData} />
             <PageTitle>

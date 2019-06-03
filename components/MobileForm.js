@@ -45,14 +45,15 @@ class MobileForm extends React.Component {
         }
         return res.json();
       })
-      .then(resData => {
+      // .then(resData => {
+      .then(({data}) => {
         const message = {
           title: "Reservation Booked",
-          name: resData.data.createBooking.name,
-          hotel: resData.data.createBooking.hotel,
-          arrivalDate: resData.data.createBooking.arrivalDate,
-          departureDate: resData.data.createBooking.departureDate,
-          _id: resData.data.createBooking._id
+          name: data.createBooking.name,
+          hotel: data.createBooking.hotel,
+          arrivalDate: data.createBooking.arrivalDate,
+          departureDate: data.createBooking.departureDate,
+          _id: data.createBooking._id
         };
         this.props.callbackFn(message);
       })
