@@ -52,7 +52,7 @@ class ReservationForm extends React.Component {
         this.props.callbackFn(message);
       })
       .catch(err => {
-        console.log(err);
+        console.log("error:", err);
       });
   };
 
@@ -65,7 +65,7 @@ class ReservationForm extends React.Component {
               <label htmlFor="name">Reservation ID</label>
               <input
                 ref={this.IDElem}
-                type="text"
+                type="number"
                 placeholder="Your reservation ID"
               />
               <span>Enter your reservation ID here</span>

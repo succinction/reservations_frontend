@@ -22,7 +22,7 @@ class ResponseMessage extends React.Component {
           height: hite,
           onComplete: complete
         });
-      }, 100);
+      }, 99);
     }
 
     let styles = { overflow: "hidden", height: 0 };
@@ -46,7 +46,6 @@ class ResponseMessage extends React.Component {
 export default ResponseMessage;
 
 const MessageLayout = styled.div`
-
   max-width: 400px;
   background: #eee;
   border-radius: 3px;

@@ -41,7 +41,7 @@ class WideForm extends React.Component {
     })
       .then(res => {
         if (res.status !== 200 && res.status !== 201) {
-          throw new Error("fail");
+          throw new Error("Ffail");
         }
         return res.json();
       })
